@@ -1,2 +1,1 @@
-# ponma
-dompling
+pengma dumplig
