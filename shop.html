@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品列表 - 膨嬤水餃 & 小帥甜點店</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 導覽列 -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">🥟 膨嬤水餃 × 小帥甜點</div>
+      <ul class="navbar-nav">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="shop.html">商品</a></li>
+        <li><a href="index.html#about">關於我們</a></li>
+        <li><a href="index.html#contact">聯絡</a></li>
+      </ul>
+      <div class="navbar-right">
+        <a href="cart.html" style="display: flex; align-items: center; font-weight: 600;">
+          🛒 購物車<span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- 標題 -->
+    <section style="background: linear-gradient(135deg, rgba(232, 145, 77, 0.1) 0%, rgba(90, 140, 111, 0.05) 100%); padding: 2rem 0;">
+      <div class="container">
+        <h1>🛍️ 商品列表</h1>
+        <p style="color: #666; margin-top: 0.5rem;">精選冷凍水餃與甜點，一站購齊所有美食需求</p>
+      </div>
+    </section>
+
+    <!-- 分類篩選 -->
+    <section style="padding: 2rem 0; background-color: white; border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <h3 style="margin-bottom: 1rem;">分類篩選</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+          <button class="btn btn-primary category-btn active" data-category="all">
+            全部商品
+          </button>
+          <button class="btn btn-outline category-btn" data-category="classic">
+            經典系列
+          </button>
+          <button class="btn btn-outline category-btn" data-category="seafood">
+            海鮮奢華
+          </button>
+          <button class="btn btn-outline category-btn" data-category="vegetarian">
+            蔬食專區
+          </button>
+          <button class="btn btn-outline category-btn" data-category="limited">
+            限定新品
+          </button>
+          <button class="btn btn-outline category-btn" data-category="cake">
+            蛋糕甜點
+          </button>
+          <button class="btn btn-outline category-btn" data-category="chocolate">
+            巧克力
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 商品網格 -->
+    <section class="section">
+      <div class="container">
+        <div class="products-grid grid-3">
+          <!-- 動態渲染 -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 頁腳 -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div>
+          <h4 style="color: white; margin-bottom: 1rem;">🥟 膨嬤水餃 × 小帥甜點店</h4>
+          <p>膨嬤堅持手工製作、精選食材，小帥用心設計甜點。</p>
+          <p>從小農到餐桌，我們堅持每一個環節。</p>
+        </div>
+        <div>
+          <h5 style="color: white; margin-bottom: 1rem;">購物說明</h5>
+          <p><a href="#">運費說明</a></p>
+          <p><a href="#">退貨政策</a></p>
+          <p><a href="#">常見問題</a></p>
+        </div>
+        <div>
+          <h5 style="color: white; margin-bottom: 1rem;">聯絡我們</h5>
+          <p>✉️ service@frozendelights.com</p>
+          <p>📞 0800-XXX-XXX</p>
+          <p>⏰ 週一至週五 09:00-18:00</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 膨嬤水餃 & 小帥甜點店。All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initShopPage();
+      // 初始載入所有商品
+      filterProducts('all');
+    });
+  </script>
+</body>
+</html>

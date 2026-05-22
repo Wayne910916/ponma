@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品詳情 - 膨嬤水餃 & 小帥甜點店</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 導覽列 -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">🥟 膨嬤水餃 × 小帥甜點</div>
+      <ul class="navbar-nav">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="shop.html">商品</a></li>
+        <li><a href="index.html#about">關於我們</a></li>
+        <li><a href="index.html#contact">聯絡</a></li>
+      </ul>
+      <div class="navbar-right">
+        <a href="cart.html" style="display: flex; align-items: center; font-weight: 600;">
+          🛒 購物車<span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- 麵包屑 -->
+    <section style="padding: 1rem 0; background-color: var(--color-light);">
+      <div class="container">
+        <a href="shop.html" style="color: var(--color-primary);">← 返回商品列表</a>
+      </div>
+    </section>
+
+    <!-- 商品詳情 -->
+    <section class="section">
+      <div class="container product-detail">
+        <!-- 動態渲染 -->
+        <div style="text-align: center; padding: 2rem;">
+          <p>載入中...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 頁腳 -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div>
+          <h4 style="color: white; margin-bottom: 1rem;">🥟 膨嬤水餃 × 小帥甜點店</h4>
+          <p>膨嬤堅持手工製作、精選食材，小帥用心設計甜點。</p>
+          <p>從小農到餐桌，我們堅持每一個環節。</p>
+        </div>
+        <div>
+          <h5 style="color: white; margin-bottom: 1rem;">購物說明</h5>
+          <p><a href="#">運費說明</a></p>
+          <p><a href="#">退貨政策</a></p>
+          <p><a href="#">常見問題</a></p>
+        </div>
+        <div>
+          <h5 style="color: white; margin-bottom: 1rem;">聯絡我們</h5>
+          <p>✉️ service@frozendelights.com</p>
+          <p>📞 0800-XXX-XXX</p>
+          <p>⏰ 週一至週五 09:00-18:00</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 膨嬤水餃 & 小帥甜點店。All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initProductPage();
+    });
+  </script>
+</body>
+</html>

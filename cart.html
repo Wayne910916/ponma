@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>購物車 - 膨嬤水餃 & 小帥甜點店</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 導覽列 -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">🥟 膨嬤水餃 × 小帥甜點</div>
+      <ul class="navbar-nav">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="shop.html">商品</a></li>
+        <li><a href="index.html#about">關於我們</a></li>
+        <li><a href="index.html#contact">聯絡</a></li>
+      </ul>
+      <div class="navbar-right">
+        <a href="cart.html" style="display: flex; align-items: center; font-weight: 600;">
+          🛒 購物車<span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- 標題 -->
+    <section style="background: linear-gradient(135deg, rgba(232, 145, 77, 0.1) 0%, rgba(90, 140, 111, 0.05) 100%); padding: 2rem 0;">
+      <div class="container">
+        <h1>🛒 購物車</h1>
+        <p style="color: #666; margin-top: 0.5rem;">檢查您的訂單，準備結帳</p>
+      </div>
+    </section>
+
+    <!-- 購物車內容 -->
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 350px; gap: 2rem;">
+          <!-- 購物車列表 -->
+          <div class="cart-items">
+            <!-- 動態渲染 -->
+            <div style="text-align: center; padding: 2rem;">
+              <p>載入中...</p>
+            </div>
+          </div>
+
+          <!-- 購物車摘要 -->
+          <div class="cart-summary">
+            <!-- 動態渲染 -->
+            <div style="text-align: center; padding: 2rem;">
+              <p>載入中...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 推薦組合 -->
+    <section class="section" style="background-color: var(--color-light);">
+      <div class="container">
+        <div class="section-title">
+          <h2>💡 免運混搭組合建議</h2>
+          <p>以下組合剛好達到免運門檻 NT$1,200！</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-body">
+              <h4>上班族必備組</h4>
+              <p style="margin: 1rem 0; font-size: 0.9rem;">
+                ✓ 經典高麗菜鮮肉 × 2 包 (NT$338)<br>
+                ✓ 招牌韭菜豬肉 × 2 包 (NT$358)<br>
+                ✓ 起司布朗尼 × 1 盒 (NT$149)<br>
+                ✓ 草莓凍乳酪 × 1 個 (NT$99)<br>
+                <strong style="color: var(--color-primary);">小計: NT$944</strong><br>
+                <span style="color: #999; font-size: 0.8rem;">加上運費 NT$80 = NT$1,024</span>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h4>家庭方案組</h4>
+              <p style="margin: 1rem 0; font-size: 0.9rem;">
+                ✓ 經典高麗菜鮮肉 × 3 包 (NT$507)<br>
+                ✓ 鮮蝦玉米 × 1 包 (NT$249)<br>
+                ✓ 宇治抹茶年輪蛋糕 × 1 盒 (NT$189)<br>
+                ✓ 巧克力熔岩球 × 1 盒 (NT$159)<br>
+                <strong style="color: var(--color-primary);">小計: NT$1,104</strong><br>
+                <span style="color: var(--color-secondary); font-size: 0.8rem;">✓ 已達免運！</span>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h4>奢華享受組</h4>
+              <p style="margin: 1rem 0; font-size: 0.9rem;">
+                ✓ 干貝飛魚卵 × 1 包 (NT$299)<br>
+                ✓ 鮮蝦玉米 × 1 包 (NT$249)<br>
+                ✓ 剝皮辣椒牛肉 × 1 包 (NT$219)<br>
+                ✓ 法式檸檬塔 × 1 盒 (NT$179)<br>
+                <strong style="color: var(--color-primary);">小計: NT$946</strong><br>
+                <span style="color: #999; font-size: 0.8rem;">加上運費 NT$80 = NT$1,026</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 頁腳 -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div>
+          <h4 style="color: white; margin-bottom: 1rem;">🥟 膨嬤水餃 × 小帥甜點店</h4>
+          <p>膨嬤堅持手工製作、精選食材，小帥用心設計甜點。</p>
+          <p>從小農到餐桌，我們堅持每一個環節。</p>
+        </div>
+        <div>
+          <h5 style="color: white; margin-bottom: 1rem;">購物說明</h5>
+          <p><a href="#">運費說明</a></p>
+          <p><a href="#">退貨政策</a></p>
+          <p><a href="#">常見問題</a></p>
+        </div>
+        <div>
+          <h5 style="color: white; margin-bottom: 1rem;">聯絡我們</h5>
+          <p>✉️ service@frozendelights.com</p>
+          <p>📞 0800-XXX-XXX</p>
+          <p>⏰ 週一至週五 09:00-18:00</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 膨嬤水餃 & 小帥甜點店。All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initCartPage();
+    });
+  </script>
+</body>
+</html>
